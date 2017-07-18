@@ -1,12 +1,12 @@
 <div class="panel panel-default">
     <div class="panel-heading">
-        <h1>{{ $ctrl.TestListRest.idTest + " - " + $ctrl.TestListRest.nameTest + ": " + $ctrl.TestListRest.tituloTest }}</h1>
+        <h4>{{ $ctrl.TestListRest.idTest + " - " + $ctrl.TestListRest.nameTest + ": " + $ctrl.TestListRest.tituloTest }}</h4>
     </div>
     <div class="panel-body">
         <div style="text-align:right;">
             <a class="btn btn-success btn-md" role="button" ui-sref="test_main.list.test">Regresar <i class="fa fa-reply"></i></a>
         </div>
-        <h2>Descripción:</h2>
+        <h5><b>Descripción:</b></h5>
         <br>
         <p>{{$ctrl.TestListRest.descTest}}</p>
     </div>
