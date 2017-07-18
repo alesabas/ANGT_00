@@ -1,0 +1,36 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>Test List</h4>
+    </div>
+    <div class="panel-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th width="5%">ID</th>
+                    <th width="20%">Nombre</th>
+                    <th width="60%">Descripcion</th>
+                    <th width="15"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr dir-paginate="x in $ctrl.TestList|itemsPerPage:5">
+                    <td> {{x.idTest}} </td>
+                    <td> {{x.nameTest + " - " + x.tituloTest}} </td>
+                    <td> {{x.descTest}} </td>
+                    <td>
+                        <button type="button" class="btn btn-success btn-md" ng-click="$ctrl.funVerTest(x.dirTest)">Go! <i class="fa fa-level-up"></i></button>
+                        <button type="button" class="btn btn-success btn-md" ng-click="$ctrl.funTestModal(x)">Ver <i class="fa fa-window-maximize"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="margin-top:-40px; text-align:center">
+            <dir-pagination-controls max-size="5" direction-links="true" boundary-links="true">
+            </dir-pagination-controls>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <br>
+    </div>
+</div>

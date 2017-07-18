@@ -1,0 +1,89 @@
+<!doctype html>
+<html ng-app="testApp">
+  <head>
+    <meta charset="utf-8">
+    <title ng-bind="$state.current.data.pageTitle"></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <style>.active { color: red; font-weight: bold }</style>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <!-- {Body_1} -->
+      <div class="navbar navbar-inverse" role="navigation">
+        
+          <div class="navbar-header">
+            <img class="navbar-brand" src="images/angularjs.png">
+          </div>
+
+          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+            <ul class="nav navbar-nav">
+              <li><a ui-sref="home">Home</a></li>
+              <li><a ui-sref="about">About</a></li>
+              <li><a ui-sref="test_main.list.test">Test</a></li>
+            </ul>
+          </div>
+        
+      </div>
+
+			<div class="container-fluid">
+				<div ui-view="HomeView"></div>
+			</div>
+      <div class="container" style="text-align:center">
+        <!--<p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <p><span class="fa fa-heart-o"></span> from the Angular team</p>-->
+        <p><span class="fa fa-rebel"></span> by masterXCX - 2017</p>
+      </div>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angularUtils-pagination/dirPagination.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <!-- endbuild -->
+
+        <script src="scripts/modules.js"></script>
+
+        <!-- test -->
+        <script src="scripts/controllers/test_mainCtrl.js"></script>
+
+        <script src="scripts/controllers/test/modules.js"></script>
+        <script src="scripts/controllers/test/testCtrl.js"></script>
+        <script src="scripts/controllers/test/testModalCtrl.js"></script>
+        <script src="scripts/controllers/test/test_1Ctrl.js"></script>
+        <script src="scripts/controllers/test/test_0Ctrl.js"></script>
+
+        <script src="scripts/factories/testFactory.js"></script>
+</body>
+</html>
