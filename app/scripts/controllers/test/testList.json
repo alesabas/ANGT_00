@@ -3,82 +3,82 @@
         "idTest": 0,
         "nameTest": "Test 00",
         "tituloTest": "Template",
-        "descTest": "Es la plantilla establecida para el desarrolo de los modulos, para cada una de las pruebas",
+        "descTest": "Es la plantilla establecida para el desarrolo de los modulos, para cada una de las pruebas.",
         "dirTest" : "test_main.list.test_0"
     }
     ,{
         "idTest": 1,
-        "nameTest": "id labore ex et quam laborum",
-        "tituloTest": "Titulo...",
-        "descTest": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
+        "nameTest": "Test 01",
+        "tituloTest": "Modal Value",
+        "descTest": "En esta pruba se desarrollara un modal el cual nos permita regresar algun valor.",
         "dirTest" : "test_main.list.test_1"
     },
     {
         "idTest": 2,
-        "nameTest": "quo vero reiciendis velit similique earum",
+        "nameTest": "Test 02",
         "tituloTest": "Titulo...",
         "descTest": "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et",
         "dirTest" : "test_main.list.test_2"
     },
     {
         "idTest": 3,
-        "nameTest": "Test 3 - ",
+        "nameTest": "Test 03",
         "tituloTest": "Titulo...",
         "descTest": "Descripcion...",
         "dirTest" : "test_main.list.test_3"
     },
     {
         "idTest": 4,
-        "nameTest": "Test 4 - ",
+        "nameTest": "Test 04",
         "tituloTest": "Titulo...",
         "descTest": "Descripcion...",
         "dirTest" : "test_main.list.test_4"
     },
     {
         "idTest": 5,
-        "nameTest": "Test 5 - ",
+        "nameTest": "Test 05",
         "tituloTest": "Titulo...",
         "descTest": "Descripcion...",
         "dirTest" : "test_main.list.test_5"
     },
     {
         "idTest": 6,
-        "nameTest": "Test 3 - ",
+        "nameTest": "Test 06",
         "tituloTest": "Titulo...",
         "descTest": "Descripcion...",
         "dirTest" : "test_main.list.test_3"
     },
     {
         "idTest": 7,
-        "nameTest": "Test 3 - ",
+        "nameTest": "Test 07",
         "tituloTest": "Titulo...",
         "descTest": "Descripcion...",
         "dirTest" : "test_main.list.test_3"
     },
     {
         "idTest": 8,
-        "nameTest": "Test 3 - ",
+        "nameTest": "Test 08",
         "tituloTest": "Titulo...",
         "descTest": "Descripcion...",
         "dirTest" : "test_main.list.test_3"
     },
     {
         "idTest": 9,
-        "nameTest": "Test 3 - ",
+        "nameTest": "Test 09",
         "tituloTest": "Titulo...",
         "descTest": "Descripcion...",
         "dirTest" : "test_main.list.test_3"
     },
     {
         "idTest": 10,
-        "nameTest": "Test 3 - ",
+        "nameTest": "Test 10",
         "tituloTest": "Titulo...",
         "descTest": "Descripcion...",
         "dirTest" : "test_main.list.test_3"
     },
     {
         "idTest": 11,
-        "nameTest": "Test 3 - ",
+        "nameTest": "Test 11",
         "tituloTest": "Titulo...",
         "descTest": "Descripcion...",
         "dirTest" : "test_main.list.test_3"

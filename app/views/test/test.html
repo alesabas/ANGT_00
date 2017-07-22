@@ -13,7 +13,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr dir-paginate="x in $ctrl.TestList|itemsPerPage:5">
+                <tr dir-paginate="x in $ctrl.TestList|itemsPerPage:6">
                     <td> {{x.idTest}} </td>
                     <td> {{x.nameTest + " - " + x.tituloTest}} </td>
                     <td> {{x.descTest}} </td>
@@ -26,7 +26,7 @@
         </table>
 
         <div style="margin-top:-40px; text-align:center">
-            <dir-pagination-controls max-size="5" direction-links="true" boundary-links="true">
+            <dir-pagination-controls max-size="6" direction-links="true" boundary-links="true">
             </dir-pagination-controls>
         </div>
     </div>
