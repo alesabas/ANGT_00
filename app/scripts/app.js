@@ -9,7 +9,8 @@ angular
     'ngTouch',
     'ui.router',
     'ui.bootstrap',
-    'angularUtils.directives.dirPagination'
+    'angularUtils.directives.dirPagination',
+    'angularValidator'
   ])
   .config(function($stateProvider, $urlRouterProvider){
       $urlRouterProvider.otherwise(function ($injector) {

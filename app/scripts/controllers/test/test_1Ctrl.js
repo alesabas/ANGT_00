@@ -2,7 +2,7 @@
 
 angular
   .module('testApp')
-  .controller('Test_1Ctrl', function (TestFactory) {
+  .controller('Test_1Ctrl', function (TestFactory, $uibModal) {
 
     function initData(){
       TestFactory.ConsTestList().then(function(data){
@@ -15,6 +15,27 @@ angular
       });
     }
 
+    function AddInfo(){
+      var modalInstance = $uibModal.open({
+        animation: true,
+        ariaLabelledBy: 'modal-title',
+        ariaDescribedBy: 'modal-body',
+        templateUrl: 'views/test/test1AddInfoModal.html',
+        controller: 'Test1AddInfoModalCtrl',
+        controllerAs: 'ctrl',
+        backdrop: 'static',
+        keyboard: true,
+        size: 'md'
+      }).result.catch(function(res) {
+        if (!(res === 'cancel' || res === 'escape key press')) {
+          throw res;
+        }
+      });
+    }
+
     var vm = this;
+
+    vm.AddInfo = AddInfo;
+
     initData();
   });

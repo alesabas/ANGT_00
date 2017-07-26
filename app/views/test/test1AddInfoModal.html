@@ -1,0 +1,46 @@
+<style>
+    .modal-header-info {
+        color:#fff;
+        padding:9px 15px;
+        border-bottom:1px solid #eee;
+        background-color: #5bc0de;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-radius-topleft: 5px;
+        -moz-border-radius-topright: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+</style>
+
+<div class="modal-header modal-header-info">
+    <button type="button" class="close" ng-click="ctrl.Close()"><i class="fa fa-times"></i></button>
+    <h2 class="modal-title"><i class="fa fa-pencil-square-o"></i> Formulario</h2>
+</div>
+<div class="modal-body">
+    <form>
+        <div class="row">
+            <div class="col-md-12">
+                <p><i class="fa fa-user"></i> <b>Nombre completo:</b></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Nombre" required>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Apellido paterno">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Apellido materno">
+                </div>
+            </div>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-info btn-sm">Guardar formulario <i class="fa fa-save"></i></button>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-danger btn-md" ng-click="ctrl.Close()">Cancelar <i class="fa fa-reply"></i></button>
+</div>
