@@ -5,8 +5,8 @@
         "tituloTest": "Template",
         "descTest": "Es la plantilla establecida para el desarrolo de los modulos, para cada una de las pruebas.",
         "dirTest" : "test_main.list.test_0"
-    }
-    ,{
+    },
+    {
         "idTest": 1,
         "nameTest": "Test 01",
         "tituloTest": "Modal Value",
@@ -16,8 +16,8 @@
     {
         "idTest": 2,
         "nameTest": "Test 02",
-        "tituloTest": "Titulo...",
-        "descTest": "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et",
+        "tituloTest": "Notificación",
+        "descTest": "En esta pruba se desarrollaran varias maneras de manejar las notificaciones.",
         "dirTest" : "test_main.list.test_2"
     },
     {
@@ -82,5 +82,12 @@
         "tituloTest": "Titulo...",
         "descTest": "Descripcion...",
         "dirTest" : "test_main.list.test_3"
+    },
+    {
+        "idTest": 12,
+        "nameTest": "Test 02",
+        "tituloTest": "PHP",
+        "descTest": "En esta pruba se desarrollara una pequeña aplicacion que nos permita manipular el lenguaje php",
+        "dirTest" : "test_main.list.test_"
     }
 ]}

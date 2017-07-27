@@ -10,7 +10,8 @@ angular
     'ui.router',
     'ui.bootstrap',
     'angularUtils.directives.dirPagination',
-    'angularValidator'
+    'angularValidator',
+    'ngNotify'
   ])
   .config(function($stateProvider, $urlRouterProvider){
       $urlRouterProvider.otherwise(function ($injector) {
