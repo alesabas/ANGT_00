@@ -2,7 +2,7 @@
 
 angular
   .module('testApp')
-  .controller('Test_1Ctrl', function (TestFactory, $uibModal) {
+  .controller('Test_1Ctrl', function (TestFactory, $uibModal, $rootScope) {
 
     function initData(){
       TestFactory.ConsTestList().then(function(data){
@@ -15,7 +15,7 @@ angular
       });
     }
 
-    function AddInfo(){
+    function ModalAddInfo(){
       var modalInstance = $uibModal.open({
         animation: true,
         ariaLabelledBy: 'modal-title',
@@ -33,9 +33,21 @@ angular
       });
     }
 
+    $rootScope.$on('AddUserInfo', function(e, UserInfo){
+      console.log('UserInfo: ', UserInfo);
+      vm.Nombre = UserInfo.Nombre;
+      vm.ApellidoPaterno = UserInfo.ApellidoPaterno;
+      vm.ApellidoMaterno = UserInfo.ApellidoMaterno;
+      vm.Calle = UserInfo.Calle;
+      vm.Colonia = UserInfo.Colonia;
+      vm.Municipio = UserInfo.Municipio;
+      vm.Telefono = UserInfo.Telefono;
+      vm.Correo = UserInfo.Correo;
+    });
+
     var vm = this;
 
-    vm.AddInfo = AddInfo;
+    vm.ModalAddInfo = ModalAddInfo;
 
     initData();
   });

@@ -20,9 +20,10 @@
                 </div>
                 <br>
                 <div class="col-md-4">
-                    <button type="button" class="btn btn-primary btn-sm" ng-click="$ctrl.AddInfo()"><i class="fa fa-pencil"></i> Ingresar datos</button>
+                    <button type="button" class="btn btn-primary btn-sm" ng-click="$ctrl.ModalAddInfo()"><i class="fa fa-pencil"></i> Ingresar datos</button>
                 </div>
             </div>
+            <hr>
             <div class="row">
                 <div class="col-md-12">
                     <p><i class="fa fa-user"></i> <b>Nombre Completo:</b></p>
@@ -30,15 +31,16 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <p>Nombre</p>
+                    <p>Nombre: {{$ctrl.Nombre}}</p>
                 </div>
                 <div class="col-md-4">
-                    <p>Apellido Patern</p>
+                    <p>Apellido Paterno: {{$ctrl.ApellidoPaterno}}</p>
                 </div>
                 <div class="col-md-4">
-                    <p>Apellido Materno</p>
+                    <p>Apellido Materno: {{$ctrl.ApellidoMaterno}}</p>
                 </div>
             </div>
+            <hr>
             <br>
             <div class="row">
                 <div class="col-md-12">
@@ -47,15 +49,16 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <p>Calle</p>
+                    <p>Calle: {{$ctrl.Calle}}</p>
                 </div>
                 <div class="col-md-4">
-                    <p>Colonia</p>
+                    <p>Colonia: {{$ctrl.Colonia}}</p>
                 </div>
                 <div class="col-md-4">
-                    <p>Municipio</p>
+                    <p>Municipio: {{$ctrl.Municipio}}</p>
                 </div>
             </div>
+            <hr>
             <br>
             <div class="row">
                 <div class="col-md-12">
@@ -64,10 +67,10 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <p>Telefono</p>
+                    <p>Teléfono: {{$ctrl.Telefono}}</p>
                 </div>
                 <div class="col-md-6">
-                    <p>Correo electronico</p>
+                    <p>Correo electrónico: {{$ctrl.Correo}}</p>
                 </div>
             </div>
         </div>

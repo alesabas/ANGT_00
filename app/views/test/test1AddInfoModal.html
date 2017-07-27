@@ -18,7 +18,7 @@
     <h2 class="modal-title"><i class="fa fa-pencil-square-o"></i> Formulario</h2>
 </div>
 <div class="modal-body">
-    <form>
+    <form angular-validator-submit="ctrl.AddInfo()" name="FormAddInfo" novalidate angular-validator>
         <div class="row">
             <div class="col-md-12">
                 <p><i class="fa fa-user"></i> <b>Nombre completo:</b></p>
@@ -27,18 +27,59 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="col-md-4">
-                    <input type="text" class="form-control" placeholder="Nombre" required>
+                    <input type="text" ng-model="ctrl.Nombre" name="InputNombre" class="form-control" placeholder="Nombre" validate-on="dirty" required required-message="'Obligatorio'">
                 </div>
                 <div class="col-md-4">
-                    <input type="text" class="form-control" placeholder="Apellido paterno">
+                    <input type="text" ng-model="ctrl.ApellidoPaterno" name="InputApellidoPaterno" class="form-control" placeholder="Apellido paterno" validate-on="dirty" required required-message="'Obligatorio'">
                 </div>
                 <div class="col-md-4">
-                    <input type="text" class="form-control" placeholder="Apellido materno">
+                    <input type="text" ng-model="ctrl.ApellidoMaterno" name="InputApellidoMaterno" class="form-control" placeholder="Apellido materno" validate-on="dirty" required required-message="'Obligatorio'">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <p><i class="fa fa-home"></i> <b>Dirección:</b></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-4">
+                    <input type="text" ng-model="ctrl.Calle" name="InputCalle" class="form-control" placeholder="Calle" validate-on="dirty" required required-message="'Es obligatorio'">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" ng-model="ctrl.Colonia" name="InputColonia" class="form-control" placeholder="Colonia" validate-on="dirty" required required-message="'Es obligatorio'">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" ng-model="ctrl.Municipio" name="InputMunicipio" class="form-control" placeholder="Municipio" validate-on="dirty" required required-message="'Es obligatorio'">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <p><i class="fa fa-phone"></i> <b>Datos de contacto:</b></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <input type="number" ng-model="ctrl.Telefono" name="InputTelefono" class="form-control" placeholder="Teléfono" validate-on="dirty" required required-message="'Es obligatroio'" ng-pattern="/^\d{10}$/">
+                </div>
+                <div class="col-md-6">
+                    <input type="email" ng-model="ctrl.Correo" name="InputCorreo" class="form-control" placeholder="correo electrónico" validate-on="dirty" required required-message="'Es obligatorio'">
                 </div>
             </div>
         </div>
         <br>
-        <button type="submit" class="btn btn-info btn-sm">Guardar formulario <i class="fa fa-save"></i></button>
+        <div class="row">
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-info btn-block">Guardar <i class="fa fa-save"></i></button>
+            </div>
+        </div>
     </form>
 </div>
 <div class="modal-footer">
