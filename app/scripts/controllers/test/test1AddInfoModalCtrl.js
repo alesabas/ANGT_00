@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-    .module('testApp')
+    .module('AngularApp')
     .controller('Test1AddInfoModalCtrl', function($uibModal, $uibModalInstance, $rootScope){
         
         function Close(){

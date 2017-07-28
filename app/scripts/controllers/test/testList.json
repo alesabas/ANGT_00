@@ -23,8 +23,8 @@
     {
         "idTest": 3,
         "nameTest": "Test 03",
-        "tituloTest": "Titulo...",
-        "descTest": "Descripcion...",
+        "tituloTest": "Promises",
+        "descTest": "Desarrollar un promise.",
         "dirTest" : "test_main.list.test_3"
     },
     {

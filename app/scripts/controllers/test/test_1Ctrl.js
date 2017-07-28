@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('testApp')
+  .module('AngularApp')
   .controller('Test_1Ctrl', function (TestFactory, $uibModal, $rootScope) {
 
     function initData(){

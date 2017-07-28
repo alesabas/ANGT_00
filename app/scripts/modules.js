@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-    .module('testApp')
+    .module('AngularApp')
     .config(function ($stateProvider) {
 
         var states = [{
@@ -54,6 +54,26 @@ angular
 					'HomeView': {
 						templateUrl: 'views/test_main.html',
 						controller: 'Test_mainCtrl',
+						controllerAs: '$ctrl'
+					}
+				},
+			},
+			{
+				name: 'cursoangularjs_main',
+				url: '/cursoangularjs_main',
+				data: {
+					pageTitle: 'MAIN | CURSOANGULARJS',
+					permissions: {
+						except: ['anonymous'],
+						options: {
+							reload: false
+						}
+					}
+				},
+				views: {
+					'HomeView': {
+						templateUrl: 'views/cursoangularjs_main.html',
+						controller: 'Cursoangularjs_mainCtrl',
 						controllerAs: '$ctrl'
 					}
 				},
