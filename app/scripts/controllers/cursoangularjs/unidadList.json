@@ -1,0 +1,12 @@
+{
+    "UnidadList":[
+        {
+            "IdUnidad": 6,
+            "TitleUnidad": "Unidad 6",
+            "NameUnidad": "Promesas",
+            "DescUnidad": "En esta unidad se explica qué son las promesas y cómo se usan desde AngularJS.",
+            "UrlUnidad": "https://www.cursoangularjs.es/doku.php?id=unidades:06_promesas:00_start",
+            "DirUnidad" : ""
+        }
+    ]
+}

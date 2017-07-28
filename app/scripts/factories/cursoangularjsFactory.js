@@ -2,15 +2,15 @@
 
 angular
     .module('AngularApp')
-    .factory('TestFactory', function($http, $q){
+    .factory('CursoangularjsFactroy', function($http, $q){
 
         var factory = {};
 
-        factory.ConsTestList = function(){
+        factory.SelectUnidadList = function(){
             var deferred = $q.defer();
-            $http.get("scripts/controllers/test/testList.json").then(function (response) {
+            $http.get("scripts/controllers/cursoangularjs/unidadList.json").then(function(response){
                 deferred.resolve(response.data);
-            }).catch(function (response) {
+            }).catch(function(response){
                 deferred.reject(response.data);
             });
             return deferred.promise;

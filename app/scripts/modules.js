@@ -59,8 +59,8 @@ angular
 				},
 			},
 			{
-				name: 'cursoangularjs_main',
-				url: '/cursoangularjs_main',
+				name: 'cursoangularjs',
+				url: '/cursoangularjs',
 				data: {
 					pageTitle: 'MAIN | CURSOANGULARJS',
 					permissions: {
@@ -72,8 +72,8 @@ angular
 				},
 				views: {
 					'HomeView': {
-						templateUrl: 'views/cursoangularjs_main.html',
-						controller: 'Cursoangularjs_mainCtrl',
+						templateUrl: 'views/cursoangularjs.html',
+						controller: 'CursoangularjsCtrl',
 						controllerAs: '$ctrl'
 					}
 				},

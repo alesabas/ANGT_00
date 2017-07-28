@@ -1,7 +1,9 @@
 'use strict';
+
 angular
 	.module('AngularApp')
 	.config(function ($stateProvider) {
+		
 		var states = [
 			{
 				name: 'test_main.list',
