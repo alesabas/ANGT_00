@@ -1,6 +1,6 @@
 'use strict';
 angular
-  .module('testApp', [
+  .module('AngularApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',

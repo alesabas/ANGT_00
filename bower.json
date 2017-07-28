@@ -22,7 +22,7 @@
     "angular-ui-router": "^1.0.5"
   },
   "appPath": "app",
-  "moduleName": "testApp",
+  "moduleName": "AngularApp",
   "overrides": {
     "bootstrap": {
       "main": [

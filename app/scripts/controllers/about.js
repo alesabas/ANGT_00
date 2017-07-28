@@ -1,13 +1,6 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name testApp.controller:AboutCtrl
- * @description
- * # AboutCtrl
- * Controller of the testApp
- */
-angular.module('testApp')
+angular.module('AngularApp')
   .controller('AboutCtrl', function () {
     var vm = this;
     vm.init = [];

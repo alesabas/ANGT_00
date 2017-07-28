@@ -1,6 +1,6 @@
 'use strict';
 angular
-	.module('testApp')
+	.module('AngularApp')
 	.config(function ($stateProvider) {
 		var states = [
 			{
@@ -46,6 +46,16 @@ angular
 				url: '/test/test_2',
 				templateUrl: 'views/test/test_2.html',
 				controller: 'Test_2Ctrl',
+				controllerAs: '$ctrl'
+			},
+			{
+				name: 'test_main.list.test_3',
+				data: {
+					pageTitle: 'MAIN | TEST 3'
+				},
+				url: '/test/test_3',
+				templateUrl: 'views/test/test_3.html',
+				controller: 'Test_3Ctrl',
 				controllerAs: '$ctrl'
 			}
 		];

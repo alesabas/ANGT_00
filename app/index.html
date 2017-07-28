@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="testApp">
+<html ng-app="AngularApp">
   <head>
     <meta charset="utf-8">
     <title ng-bind="$state.current.data.pageTitle"></title>
@@ -38,6 +38,7 @@
               <li><a ui-sref="home">Home</a></li>
               <li><a ui-sref="about">About</a></li>
               <li><a ui-sref="test_main.list.test">Test</a></li>
+              <li><a ui-sref="cursoangularjs_main">Cursoangularjs</a></li>
             </ul>
           </div>
         
@@ -89,7 +90,11 @@
         <script src="scripts/controllers/test/test_1Ctrl.js"></script>
         <script src="scripts/controllers/test/test1AddInfoModalCtrl.js"></script>
         <script src="scripts/controllers/test/test_2Ctrl.js"></script>
-
+        <script src="scripts/controllers/test/test_3Ctrl.js"></script>
         <script src="scripts/factories/testFactory.js"></script>
+
+        <!-- cursoangularjs -->
+        <script src="scripts/controllers/cursoangularjs_mainCtrl.js"></script>
+
 </body>
 </html>

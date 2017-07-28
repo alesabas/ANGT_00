@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-    .module('testApp')
+    .module('AngularApp')
     .controller('Test_2Ctrl', function(TestFactory, ngNotify){
 
         function initData(){

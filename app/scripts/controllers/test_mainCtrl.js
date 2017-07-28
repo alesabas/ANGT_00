@@ -1,9 +1,7 @@
 'use strict';
 
-angular.module('testApp')
+angular
+  .module('AngularApp')
   .controller('Test_mainCtrl', function ($state, $location) {
-
-    
-
     var vm = this;
   });

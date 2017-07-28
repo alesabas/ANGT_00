@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-    .module('testApp')
+    .module('AngularApp')
     .factory('TestFactory', function($http, $q){
 
         var factory = {};
@@ -14,6 +14,10 @@ angular
                 deferred.reject(response.data);
             });
             return deferred.promise;
+        };
+
+        factory.ConsMiDom = function(){
+            
         };
 
         return factory;
