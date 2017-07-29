@@ -2,10 +2,10 @@
 
 angular
     .module('AngularApp')
-    .controller('UnidadModalCtrl', function($uibModal, $uibModalInstance, CursoangularjsFactory, UnidadObj){
+    .controller('UnidadModalCtrl', function($uibModal, $uibModalInstance, DesarrollowebFactory, UnidadObj){
         
         function initData(){
-            CursoangularjsFactory.SelectUnidadList().then(function(data){
+            DesarrollowebFactory.SelectUnidadList().then(function(data){
                 vm.UnidadList = data.UnidadList;
                 for(var i = 0; i < vm.UnidadList.length; i ++){
                     if(vm.UnidadList[i].IdUnidad == vm.UnidadObj.IdUnidad){

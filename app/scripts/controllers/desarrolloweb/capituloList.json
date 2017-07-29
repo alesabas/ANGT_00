@@ -6,7 +6,7 @@
             "NameUnidad": "Promesas",
             "DescUnidad": "En esta unidad se explica qué son las promesas y cómo se usan desde AngularJS.",
             "UrlUnidad": "https://www.cursoangularjs.es/doku.php?id=unidades:06_promesas:00_start",
-            "DirUnidad" : "cursoangularjs.list.unidad_1"
+            "DirUnidad" : "desarrolloweb.list.unidad_1"
         }
     ]
 }

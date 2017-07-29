@@ -8,9 +8,11 @@ angular
 
         factory.ConsTestList = function(){
             var deferred = $q.defer();
-            $http.get("scripts/controllers/test/testList.json").then(function (response) {
+            $http.get("scripts/controllers/test/testList.json")
+            .then(function (response) {
                 deferred.resolve(response.data);
-            }).catch(function (response) {
+            })
+            .catch(function (response) {
                 deferred.reject(response.data);
             });
             return deferred.promise;

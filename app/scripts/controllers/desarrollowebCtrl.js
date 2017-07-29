@@ -2,6 +2,6 @@
 
 angular
     .module('AngularApp')
-    .controller('CursoangularjsCtrl', function(){
+    .controller('DesarrollowebCtrl', function(){
         var vm = this;
     });

@@ -30,8 +30,8 @@
     {
         "idTest": 4,
         "nameTest": "Test 04",
-        "tituloTest": "Titulo...",
-        "descTest": "Descripcion...",
+        "tituloTest": "Login",
+        "descTest": "Desarrollar un modulo de inicio de sesion.",
         "dirTest" : "test_main.list.test_4"
     },
     {

@@ -2,10 +2,10 @@
 
 angular
     .module('AngularApp')
-    .controller('UnidadCtrl', function(CursoangularjsFactory, $state, $uibModal){
+    .controller('UnidadCtrl', function(DesarrollowebFactory, $state, $uibModal){
 
         function initData(){
-            CursoangularjsFactory.SelectUnidadList().then(function(data){
+            DesarrollowebFactory.SelectUnidadList().then(function(data){
                 vm.UnidadList = data.UnidadList;
             });
         }
@@ -20,7 +20,7 @@ angular
                 animation: true,
                 ariaLabelledBy: 'modal-title',
                 ariaDescribedBy: 'modal-body',
-                templateUrl: 'views/cursoangularjs/unidadModal.html',
+                templateUrl: 'views/desarrolloweb/unidadModal.html',
                 controller: 'UnidadModalCtrl',
                 controllerAs: 'ctrl',
                 backdrop: 'static',

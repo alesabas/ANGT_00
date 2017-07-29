@@ -59,10 +59,10 @@ angular
 				},
 			},
 			{
-				name: 'cursoangularjs',
-				url: '/cursoangularjs',
+				name: 'desarrolloweb',
+				url: '/desarrolloweb',
 				data: {
-					pageTitle: 'MAIN | CURSOANGULARJS',
+					pageTitle: 'MAIN | DESARROLLOWEB',
 					permissions: {
 						except: ['anonymous'],
 						options: {
@@ -72,8 +72,8 @@ angular
 				},
 				views: {
 					'HomeView': {
-						templateUrl: 'views/cursoangularjs.html',
-						controller: 'CursoangularjsCtrl',
+						templateUrl: 'views/desarrolloweb.html',
+						controller: 'DesarrollowebCtrl',
 						controllerAs: '$ctrl'
 					}
 				},
