@@ -36,7 +36,6 @@ angular
           throw res;
         }
       });
-
     }
 
     var vm = this;

@@ -17,6 +17,14 @@ angular
                    templateUrl: 'views/cursoangularjs/unidad.html',
                    controller: 'UnidadCtrl',
                    controllerAs: '$ctrl'
+            },
+            {
+                   name: 'cursoangularjs.list.unidad_1',
+                   data: {pageTitle: 'CURSOANGULARJS | UNIDAD 1'},
+                   url: '/unidad_1',
+                   templateUrl: 'views/cursoangularjs/unidad_1.html',
+                   controller: 'Unidad_1Ctrl',
+                   controllerAs: '$ctrl'
             }
         ];
 

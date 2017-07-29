@@ -2,7 +2,7 @@
 
 angular
     .module('AngularApp')
-    .factory('CursoangularjsFactroy', function($http, $q){
+    .factory('CursoangularjsFactory', function($http, $q){
 
         var factory = {};
 
