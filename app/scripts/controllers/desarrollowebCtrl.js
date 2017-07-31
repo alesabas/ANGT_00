@@ -2,33 +2,33 @@
 
 angular
     .module('AngularApp')
-    .controller('UnidadCtrl', function(DesarrollowebFactory, $state, $uibModal){
-
+    .controller('DesarrollowebCtrl', function(DesarrollowebFactory, $state, $uibModal){
+        
         function initData(){
-            DesarrollowebFactory.SelectUnidadList().then(function(data){
-                vm.UnidadList = data.UnidadList;
+            DesarrollowebFactory.SelectCapituloList().then(function(data){
+                vm.CapituloList = data.CapituloList;
             });
         }
 
-        function GoToUnidad(dir){
+        function GoToCapitulo(dir){
             $state.go(dir);
         }
 
-        function OpenUnidadModal(UnidadObj){
-            var UnidadObj = UnidadObj;
+        function OpenCapituloModal(IdCapitulo){
+            var IdCapitulo = IdCapitulo;
             var modalInstance = $uibModal.open({
                 animation: true,
                 ariaLabelledBy: 'modal-title',
                 ariaDescribedBy: 'modal-body',
-                templateUrl: 'views/desarrolloweb/unidadModal.html',
-                controller: 'UnidadModalCtrl',
+                templateUrl: 'views/desarrolloweb/capituloModal.html',
+                controller: 'CapituloModalCtrl',
                 controllerAs: 'ctrl',
                 backdrop: 'static',
                 keyboard: true,
                 size: 'md',
                 resolve: {
-                    UnidadObj: function () {
-                        return UnidadObj;
+                    IdCapitulo: function () {
+                        return IdCapitulo;
                     }
                 }
                 }).result.catch(function(res) {
@@ -40,8 +40,8 @@ angular
 
         var vm = this;
 
-        vm.GoToUnidad = GoToUnidad;
-        vm.OpenUnidadModal = OpenUnidadModal;
+        vm.GoToCapitulo = GoToCapitulo;
+        vm.OpenCapituloModal = OpenCapituloModal;
 
         initData();
 
