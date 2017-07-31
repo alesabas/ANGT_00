@@ -10,10 +10,11 @@ angular
                 for(var i = 0; i < vm.CapituloList.length; i ++){
                     if(vm.CapituloList[i].IdCapitulo == vm.IdCapitulo){
                         vm.CapituloListRes = vm.CapituloList[i];
+                        var Dir = vm.CapituloListRes.DirCapitulo;
+                        $state.go(Dir);
                     }
                 }
             });
-            $state.go('capitulo.detalle.'+vm.IdCapitulo);
         }
 
         var vm = this;

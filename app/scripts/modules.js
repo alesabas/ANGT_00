@@ -99,6 +99,26 @@ angular
 					}
 				},
 			},
+			{
+				name: 'codigofacilito',
+				url: '/codigofacilito',
+				data: {
+					pageTitle: 'MAIN | CODIGOFACLITO',
+					permissions: {
+						except: ['anonymous'],
+						options: {
+							reload: false
+						}
+					}
+				},
+				views: {
+					'HomeView': {
+						templateUrl: 'views/codigofacilito.html',
+						controller: 'CodigofacilitoCtrl',
+						controllerAs: '$ctrl'
+					}
+				},
+			}
 		];
 
         states.forEach(function (state) {
