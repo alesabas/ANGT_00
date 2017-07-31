@@ -1,1 +1,49 @@
-H
+<style>
+    .Negativo {
+        color: red;
+    }
+    .Positivo {
+        color: blue;
+    }
+    .Neutro {
+        color: gray;
+    }
+    .TituloPeq{
+        font-size: 10pt;
+    }
+    .TituloGra{
+        font-size: 18pt;
+    }
+    .Fondo{
+        background-color:gray;
+    }
+    .ColorFuente{
+        color: #fff;
+    }
+    .TamanoFuente{
+        font-size: 30px;
+    }
+</style>
+<div class="container">
+    <h2 ng-class="$ctrl.Encabezado">Encabezado:</h2>
+    <br>
+    <h4 ng-class="$ctrl.TituloSize">Título</h4>
+    <select class="form-control" ng-model="$ctrl.TituloSize">
+        <option value="">Selecciona el tamaño del Título</option>
+        <option value="TituloPeq">Título pequeño</option>
+        <option value="TituloGra">Título grande</option>
+    </select>
+    <br>
+    <p>¿Cuánto?</p>
+    <div class="input-group">
+        <input type="number" class="form-control" ng-model="$ctrl.Cantidad" size="4" placeholder="0">
+        <span class="input-group-btn">
+            <button type="button" class="btn btn-primary btn-md" ng-click="$ctrl.Sumar()"><i class="fa fa-plus"></i></button>
+            <button type="button" class="btn btn-danger btn-md" ng-click="$ctrl.Restar()"><i class="fa fa-minus"></i></button>
+        </span>
+    </div>
+    <h4>Total:</h4>
+    <p ng-class="{Positivo: $ctrl.Total >= 0, Negativo: $ctrl.Total < 0, Neutro: $ctrl.Total == 0}">
+        <span>{{$ctrl.Total}}</span>
+    </p>
+</div> 

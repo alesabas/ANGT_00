@@ -2,21 +2,26 @@
 
 angular
     .module('AngularApp')
-    .controller('Capitulo_13Ctrl', function(DesarrollowebFactory){
+    .controller('Capitulo_13Ctrl', function(){
 
-        function initData(){
-            DesarrollowebFactory.SelectCapituloList().then(function(data){
-                vm.CapituloList = data.CapituloList;
-                for(var i = 0; i < vm.CapituloList.length; i ++){
-                    if(vm.CapituloList[i].IdCapitulo == 6){
-                        vm.CapituloListRes = vm.CapituloList[i];
-                    }
-                }
-            });
+        function Sumar(){
+            if(vm.Cantidad != null && vm.Cantidad != 0){
+                vm.Total = vm.Total + vm.Cantidad;
+            }
+        }
+
+        function Restar(){
+            if(vm.Cantidad != null && vm.Cantidad != 0){
+                vm.Total = vm.Total - vm.Cantidad;
+            }
         }
 
         var vm = this;
+        
+        vm.Encabezado = ["Fondo", "ColorFuente", "TamanoFuente"];
+        vm.Total = 0;
 
-        initData();
+        vm.Sumar = Sumar;
+        vm.Restar = Restar;
 
     });
