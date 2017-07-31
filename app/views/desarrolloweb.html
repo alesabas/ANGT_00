@@ -1,3 +1,36 @@
-<div class="container-fluid-primary">
-    <div ui-view></div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>Capítulos:</h4>
+    </div>
+    <div class="panel-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th width=5%>ID</th>
+                    <th width=20%>Capítulo</th>
+                    <th width=55%>Descripción</th>
+                    <th width=20%>Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr dir-paginate="C in $ctrl.CapituloList|orderBy:'IdCapitulo'|itemsPerPage:6">
+                    <td>{{ C.IdCapitulo }}</td>
+                    <td>{{ C.TitleCapitulo + " - " + C.NameCapitulo }}</td>
+                    <td>{{ C.DescCapitulo }}</td>
+                    <td>
+                        <button type="button" class="btn btn-success btn-md" ui-sref="capitulo({IdCapitulo: C.IdCapitulo})">Go! <i class="fa fa-level-up"></i></button>
+                        <button type="button" class="btn btn-success btn-md" ng-click="$ctrl.OpenCapituloModal(C.IdCapitulo)">Ver <i class="fa fa-window-maximize"></i></button>
+                        <a href="{{C.UrlCapitulo}}" target="_blank" type="button" class="btn btn-success btn-md">Web <i class="fa fa-external-link"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="margin-top:-40px; text-align:center">
+            <dir-pagination-controls max-size="6" direction-links="true" boundary-links="true">
+            </dir-pagination-controls>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <br>
+    </div>
 </div>

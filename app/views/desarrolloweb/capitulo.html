@@ -1,33 +1,19 @@
 <div class="panel panel-default">
     <div class="panel-heading">
-        <h4>Capítulos</h4>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>{{ $ctrl.CapituloListRes.IdCapitulo + " - " + $ctrl.CapituloListRes.TitleCapitulo + ": " + $ctrl.CapituloListRes.NameCapitulo }}</h3>
+            </div>
+            <div class="col-md-6" style="text-align:right;">
+                <a class="btn btn-success btn-md" role="button" ui-sref="desarrolloweb">Regresar <i class="fa fa-reply"></i></a>
+            </div>
+        </div>
     </div>
     <div class="panel-body">
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th width=5%>ID</th>
-                    <th width=15%>Unidad</th>
-                    <th width=60%>Descripción</th>
-                    <th width=20%>Opciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr dir-paginate="U in $ctrl.UnidadList|orderBy:'IdUnidad'|itemsPerPage:6">
-                    <td>{{ U.IdUnidad }}</td>
-                    <td>{{ U.TitleUnidad + " - " + U.NameUnidad }}</td>
-                    <td>{{ U.DescUnidad }}</td>
-                    <td>
-                        <button type="button" class="btn btn-success btn-md" ng-click="$ctrl.GoToUnidad(U.DirUnidad)">Go! <i class="fa fa-level-up"></i></button>
-                        <button type="button" class="btn btn-success btn-md" ng-click="$ctrl.OpenUnidadModal(U)">Ver <i class="fa fa-window-maximize"></i></button>
-                        <a href="{{U.UrlUnidad}}" target="_blank" type="button" class="btn btn-success btn-md">Web <i class="fa fa-external-link"></i></a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <div style="margin-top:-40px; text-align:center">
-            <dir-pagination-controls max-size="6" direction-links="true" boundary-links="true">
-            </dir-pagination-controls>
+        <h4><b>Descripción:</b></h4>
+        <p>{{$ctrl.CapituloListRes.DescCapitulo}}</p>
+        <div class="container-fluid-primary">
+            <div ui-view></div>
         </div>
     </div>
     <div class="panel-footer">

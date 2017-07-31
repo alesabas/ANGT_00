@@ -6,12 +6,13 @@ angular
 
         var factory = {};
 
-        factory.SelectUnidadList = function(){
+        factory.SelectCapituloList = function(){
             var deferred = $q.defer();
             $http.get("scripts/controllers/desarrolloweb/capituloList.json")
             .then(function(response){
                 deferred.resolve(response.data);
-            }).catch(function(response){
+            })
+            .catch(function(response){
                 deferred.reject(response.data);
             });
             return deferred.promise;

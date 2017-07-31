@@ -15,11 +15,11 @@
 
 <div class="modal-header modal-header-info">
     <button type="button" class="close" ng-click="ctrl.Close()"><i class="fa fa-times"></i></button>
-    <h2 class="modal-title"><i class="fa fa-info-circle"></i> {{ctrl.UnidadListRes.IdUnidad + " - " + ctrl.UnidadListRes.TitleUnidad}}</h2>
+    <h2 class="modal-title"><i class="fa fa-info-circle"></i> {{ctrl.CapituloListRes.IdCapitulo}}</h2>
 </div>
 <div class="modal-body">
-    <h3>{{ctrl.UnidadListRes.NameUnidad}}:</h3>
-    <p><b>Descripción: </b>{{ctrl.UnidadListRes.DescUnidad}}</p>
+    <h3>{{ctrl.CapituloListRes.TitleCapitulo + " - " + ctrl.CapituloListRes.NameCapitulo}}:</h3>
+    <p><b>Descripción: </b>{{ctrl.CapituloListRes.DescCapitulo}}</p>
 </div>
 <div class="modal-footer">
     <button type="button" class="btn btn-danger btn-md" ng-click="ctrl.Close()">Cancelar <i class="fa fa-reply"></i></button>

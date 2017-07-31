@@ -1,12 +1,12 @@
 {
-    "UnidadList":[
+    "CapituloList":[
         {
-            "IdUnidad": 6,
-            "TitleUnidad": "Unidad 6",
-            "NameUnidad": "Promesas",
-            "DescUnidad": "En esta unidad se explica qué son las promesas y cómo se usan desde AngularJS.",
-            "UrlUnidad": "https://www.cursoangularjs.es/doku.php?id=unidades:06_promesas:00_start",
-            "DirUnidad" : "desarrolloweb.list.unidad_1"
+            "IdCapitulo": 13,
+            "TitleCapitulo": "Capitulo 13",
+            "NameCapitulo": "Directiva ngClass en AngularJS",
+            "DescCapitulo": "Explicaciones de las alternativas posibles de uso de la directiva ngClass de AngularJS con ejemplos prácticos..",
+            "UrlCapitulo": "https://desarrolloweb.com/articulos/directiva-ngclass-angularjs.html",
+            "DirCapitulo" : "capitulo.detalle.13"
         }
     ]
 }

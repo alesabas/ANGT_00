@@ -4,7 +4,8 @@ angular
     .module('AngularApp')
     .config(function ($stateProvider) {
 
-        var states = [{
+        var states = [
+			{
 				name: 'home',
 				data: {
 					pageTitle: 'MAIN | HOME',
@@ -77,7 +78,27 @@ angular
 						controllerAs: '$ctrl'
 					}
 				},
-			}
+			},
+			{
+				name: 'capitulo',
+				url: '/desarrolloweb/capitulo/:IdCapitulo',
+				data: {
+					pageTitle: 'DESARROLLOWEB | CAPÍTULO',
+					permissions: {
+						except: ['anonymous'],
+						options: {
+							reload: false
+						}
+					}
+				},
+				views: {
+					'HomeView': {
+						templateUrl: 'views/desarrolloweb/capitulo.html',
+						controller: 'CapituloCtrl',
+						controllerAs: '$ctrl'
+					}
+				},
+			},
 		];
 
         states.forEach(function (state) {
