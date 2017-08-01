@@ -2,7 +2,7 @@
 
 angular
     .module('AngularApp')
-    .controller('CapituloModalCtrl', function($uibModal, $uibModalInstance, DesarrollowebFactory, IdCapitulo){
+    .controller('CapituloModalCtrl', function($uibModalInstance, DesarrollowebFactory, IdCapitulo){
         
         function initData(){
             DesarrollowebFactory.SelectCapituloList().then(function(data){

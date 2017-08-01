@@ -118,6 +118,26 @@ angular
 						controllerAs: '$ctrl'
 					}
 				},
+			},
+			{
+				name: 'tutorial',
+				url: '/codigofacilito/tutorial/:IdTutorial',
+				data: {
+					pageTitle: 'CODIGOFACILITO | TUTORIAL',
+					permissions: {
+						except: ['anonymous'],
+						options: {
+							reload: false
+						}
+					}
+				},
+				views: {
+					'HomeView': {
+						templateUrl: 'views/codigofacilito/tutorial.html',
+						controller: 'TutorialCtrl',
+						controllerAs: '$ctrl'
+					}
+				},
 			}
 		];
 

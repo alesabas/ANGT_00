@@ -8,7 +8,7 @@ angular
 
         factory.SelectCapituloList = function(){
             var deferred = $q.defer();
-            $http.get("scripts/controllers/desarrolloweb/capituloList.json")
+            $http.get('scripts/controllers/desarrolloweb/capituloList.json')
             .then(function(response){
                 deferred.resolve(response.data);
             })
