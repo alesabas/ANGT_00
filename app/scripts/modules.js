@@ -138,6 +138,46 @@ angular
 						controllerAs: '$ctrl'
 					}
 				},
+			},
+			{
+				name: 'w3schools',
+				url: '/w3schools',
+				data: {
+					pageTitle: 'MAIN | W3SCHOOLS',
+					permissions: {
+						except: ['anonymous'],
+						options: {
+							reload: false
+						}
+					}
+				},
+				views: {
+					'HomeView': {
+						templateUrl: 'views/w3schools.html',
+						controller: 'W3schoolsCtrl',
+						controllerAs: '$ctrl'
+					}
+				},
+			},
+			{
+				name: 'tema',
+				url: '/w3schools/Tema/:IdTema',
+				data: {
+					pageTitle: 'W3SCHOOLS | TEMA',
+					permissions: {
+						except: ['anonymous'],
+						options: {
+							reload: false
+						}
+					}
+				},
+				views: {
+					'HomeView': {
+						templateUrl: 'views/w3schools/Tema.html',
+						controller: 'TemaCtrl',
+						controllerAs: '$ctrl'
+					}
+				},
 			}
 		];
 

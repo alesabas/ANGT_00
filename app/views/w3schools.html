@@ -1,0 +1,36 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>Temas:</h4>
+    </div>
+    <div class="panel-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th width=5%>ID</th>
+                    <th width=20%>Tema</th>
+                    <th width=55%>Descripción</th>
+                    <th width=20%>Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr dir-paginate="T in $ctrl.TemaList|orderBy:'IdTema'|itemsPerPage:6">
+                    <td>{{ T.IdTema }}</td>
+                    <td>{{ T.TitleTema + " - " + T.NameTema }}</td>
+                    <td>{{ T.DescTema }}</td>
+                    <td>
+                        <button type="button" class="btn btn-success btn-md" ui-sref="tema({IdTema: T.IdTema})">Go! <i class="fa fa-level-up"></i></button>
+                        <button type="button" class="btn btn-success btn-md" ng-click="$ctrl.OpenTemaModal(T.IdTema)">Ver <i class="fa fa-window-maximize"></i></button>
+                        <a href="{{T.UrlTema}}" target="_blank" type="button" class="btn btn-success btn-md">Web <i class="fa fa-external-link"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="margin-top:-40px; text-align:center">
+            <dir-pagination-controls max-size="6" direction-links="true" boundary-links="true">
+            </dir-pagination-controls>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <br>
+    </div>
+</div>

@@ -14,8 +14,8 @@ angular
             $state.go(dir);
         }
 
-        function OpenCapituloModal(IdCapitulo){
-            var IdCapitulo = IdCapitulo;
+        function OpenCapituloModal(Id){
+            var IdCapitulo = Id;
             var modalInstance = $uibModal.open({
                 animation: true,
                 ariaLabelledBy: 'modal-title',
@@ -31,8 +31,8 @@ angular
                         return IdCapitulo;
                     }
                 }
-                }).result.catch(function(res) {
-                    if (!(res === 'cancel' || res === 'escape key press')) {
+            }).result.catch(function(res) {
+                if (!(res === 'cancel' || res === 'escape key press')) {
                     throw res;
                 }
             });

@@ -2,6 +2,7 @@
 
 angular
   .module('AngularApp')
-  .controller('Test_mainCtrl', function ($state, $location) {
+  .controller('Test_mainCtrl', function () {
     var vm = this;
+    vm.init = [];
   });

@@ -10,8 +10,8 @@ angular
             });
         }
 
-        function OpenTutorialModal(IdTutorial){
-            var IdTutorial = IdTutorial;
+        function OpenTutorialModal(Id){
+            var IdTutorial = Id;
             var modalInstance = $uibModal.open({
                 animation: true,
                 ariaLabelledBy: 'modal-title',
@@ -27,10 +27,10 @@ angular
                         return IdTutorial;
                     }
                 }
-                }).result.catch(function(res) {
+            }).result.catch(function(res) {
                     if (!(res === 'cancel' || res === 'escape key press')) {
                     throw res;
-                }
+            }
             });
         }        
 
