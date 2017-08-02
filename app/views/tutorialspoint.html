@@ -1,0 +1,36 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>Puntos:</h4>
+    </div>
+    <div class="panel-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th width=5%>ID</th>
+                    <th width=20%>Punto</th>
+                    <th width=55%>Descripción</th>
+                    <th width=20%>Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr dir-paginate="P in $ctrl.PuntoList|orderBy:'IdPunto'|itemsPerPage:6">
+                    <td>{{ P.IdPunto }}</td>
+                    <td>{{ P.TitlePunto + " - " + P.NamePunto }}</td>
+                    <td>{{ P.DescPunto }}</td>
+                    <td>
+                        <button type="button" class="btn btn-success btn-md" ui-sref="punto({IdPunto: P.IdPunto})">Go! <i class="fa fa-level-up"></i></button>
+                        <button type="button" class="btn btn-success btn-md" ng-click="$ctrl.OpenPuntoModal(P.IdPunto)">Ver <i class="fa fa-window-maximize"></i></button>
+                        <a href="{{P.UrlPunto}}" target="_blank" type="button" class="btn btn-success btn-md">Web <i class="fa fa-external-link"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="margin-top:-40px; text-align:center">
+            <dir-pagination-controls max-size="6" direction-links="true" boundary-links="true">
+            </dir-pagination-controls>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <br>
+    </div>
+</div>

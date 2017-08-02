@@ -178,6 +178,46 @@ angular
 						controllerAs: '$ctrl'
 					}
 				},
+			},
+			{
+				name: 'tutorialspoint',
+				url: '/tutorialspoint',
+				data: {
+					pageTitle: 'MAIN | TUTORIALSPOINT',
+					permissions: {
+						except: ['anonymous'],
+						options: {
+							reload: false
+						}
+					}
+				},
+				views: {
+					'HomeView': {
+						templateUrl: 'views/tutorialspoint.html',
+						controller: 'TutorialspointCtrl',
+						controllerAs: '$ctrl'
+					}
+				},
+			},
+			{
+				name: 'punto',
+				url: '/w3schools/punto/:IdPunto',
+				data: {
+					pageTitle: 'TUTORIALSPOINT | PUNTO',
+					permissions: {
+						except: ['anonymous'],
+						options: {
+							reload: false
+						}
+					}
+				},
+				views: {
+					'HomeView': {
+						templateUrl: 'views/tutorialspoint/punto.html',
+						controller: 'PuntoCtrl',
+						controllerAs: '$ctrl'
+					}
+				},
 			}
 		];
 

@@ -1,0 +1,12 @@
+{
+    "PuntoList":[
+        {
+            "IdPunto": 4,
+            "TitlePunto": "Punto 4",
+            "NamePunto": "Name",
+            "DescPunto": "Desc",
+            "UrlPunto": "Url",
+            "DirPunto" : "punto.detalle.4"
+        }
+    ]
+}
