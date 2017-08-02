@@ -17,9 +17,7 @@ angular
         }
 
         var vm = this;
-
         vm.IdTutorial = $stateParams.IdTutorial;
-
         Start();
 
     });
