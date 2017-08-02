@@ -3,9 +3,9 @@
         {
             "IdPunto": 4,
             "TitlePunto": "Punto 4",
-            "NamePunto": "Name",
-            "DescPunto": "Desc",
-            "UrlPunto": "Url",
+            "NamePunto": "First application",
+            "DescPunto": "Before we start with creating actual HelloWorld application using AngularJS, let us see what are the actual parts of a AngularJS application.",
+            "UrlPunto": "https://www.tutorialspoint.com/angularjs/angularjs_first_application.htm",
             "DirPunto" : "punto.detalle.4"
         }
     ]

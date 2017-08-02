@@ -1,1 +1,13 @@
-4
+<div class="container">
+    <h4>Ejemplo</h4>
+    <div class="input-group">
+        <span class="input-group-addon">Introduce tu nombre: </span>
+        <input type="text" class="form-control" ng-model="$ctrl.Name">
+    </div>
+    <br>
+    <h4>Con ng-bind:</h4>
+    <p>Hello <span ng-bind="$ctrl.Name"></span>!!!</p>
+    <br>
+    <h4>Sin ng-bind:</h4>
+    <p>Hello {{ $ctrl.Name }}!!!</p>
+</div>
