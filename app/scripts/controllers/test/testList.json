@@ -44,9 +44,9 @@
     {
         "idTest": 6,
         "nameTest": "Test 06",
-        "tituloTest": "Titulo...",
-        "descTest": "Descripcion...",
-        "dirTest" : "test_main.list.test_3"
+        "tituloTest": "uib-tabset",
+        "descTest": "Desarrollar un uib-tabset",
+        "dirTest" : "test_main.list.test_6"
     },
     {
         "idTest": 7,
