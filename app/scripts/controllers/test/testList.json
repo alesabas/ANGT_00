@@ -37,8 +37,8 @@
     {
         "idTest": 5,
         "nameTest": "Test 05",
-        "tituloTest": "Titulo...",
-        "descTest": "Descripcion...",
+        "tituloTest": "Conexión MySQL",
+        "descTest": "Realizar un modulo que permita establecer una conexión a MySQL",
         "dirTest" : "test_main.list.test_5"
     },
     {

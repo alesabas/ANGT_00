@@ -69,6 +69,16 @@ angular
 				templateUrl: 'views/test/test_4.html',
 				controller: 'Test_4Ctrl',
 				controllerAs: '$ctrl'
+			},
+			{
+				name: 'test_main.list.test_5',
+				data: {
+					pageTitle: 'MAIN | TEST 5'
+				},
+				url: '/test/test_5',
+				templateUrl: 'views/test/test_5.html',
+				controller: 'Test_5Ctrl',
+				controllerAs: '$ctrl'
 			}
 		];
 
