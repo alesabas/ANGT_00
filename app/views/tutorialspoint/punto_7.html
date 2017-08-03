@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Ejemplo:</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-4">
+                <p>Introduce tu nombre:</p>
+            </div>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="$ctrl.student.firstName">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-4">
+                <p>Introduce tu apellido:</p>
+            </div>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="$ctrl.student.lastName">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <p>You are entering: {{$ctrl.fullName()}}</p>
+            </div>
+        </div>
+    </div>

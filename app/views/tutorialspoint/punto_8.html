@@ -1,0 +1,93 @@
+<div class="container">
+    <h4>Ejemplo:</h4>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-4">
+                <p>Introduce tu nombre:</p>
+            </div>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="$ctrl.Student.FirstName">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-4">
+                <p>Introduce tu apellido:</p>
+            </div>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="$ctrl.Student.LastName">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-4">
+                <p>Introduce tu NIP:</p>
+            </div>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="$ctrl.Student.Fees">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-4">
+                <p>Introduce tu materia:</p>
+            </div>
+            <div class="col-md-8">
+                <input type="text" class="form-control" ng-model="$ctrl.SubjectName">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-4">
+                <p>Upper Case:</p>
+            </div>
+            <div class="col-md-8">
+                <p>{{$ctrl.FullName() | uppercase}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-4">
+                <p>Lower Case:</p>
+            </div>
+            <div class="col-md-8">
+                <p>{{$ctrl.FullName() | lowercase}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-4">
+                <p>Fees:</p>
+            </div>
+            <div class="col-md-8">
+                <p>{{$ctrl.Student.Fees | currency}}</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <ul>
+                    <li ng-repeat="S in $ctrl.Subjects|filter:$ctrl.SubjectName|orderBy:'marks'">
+                        {{ S.Name + ', marks:' + S.Marks }}
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>Sample Application</h1>
+    <div ng-app = "" ng-init = "$ctrl.quantity = 1;$ctrl.cost = 30; $ctrl.student = {firstname:'Mahesh',lastname:'Parashar',rollno:101};marks = [80,90,75,73,60]">
+        <p>Hello {{$ctrl.student.firstname + " " + $ctrl.student.lastname}}!</p>
+        <p>Expense on Books : {{$ctrl.cost * $ctrl.quantity}} Rs</p>
+        <p>Roll No: {{$ctrl.student.rollno}}</p>
+        <p>Marks(Math): {{marks[3]}}</p>
+    </div>
+</div>

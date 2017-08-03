@@ -16,6 +16,27 @@ angular
                 templateUrl: 'views/tutorialspoint/punto_4.html',
                 controller: 'Punto_4Ctrl',
                 controllerAs: '$ctrl'
+            },
+            {
+                name: 'punto.detalle.6',
+                data: {pageTitle: 'TUTORIALSPOINT | PUNTO 6'},
+                templateUrl: 'views/tutorialspoint/punto_6.html',
+                controller: 'Punto_6Ctrl',
+                controllerAs: '$ctrl'
+            },
+            {
+                name: 'punto.detalle.7',
+                data: {pageTitle: 'TUTORIALSPOINT | PUNTO 7'},
+                templateUrl: 'views/tutorialspoint/punto_7.html',
+                controller: 'Punto_7Ctrl',
+                controllerAs: '$ctrl'
+            },
+            {
+                name: 'punto.detalle.8',
+                data: {pageTitle: 'TUTORIALSPOINT | PUNTO 8'},
+                templateUrl: 'views/tutorialspoint/punto_8.html',
+                controller: 'Punto_8Ctrl',
+                controllerAs: '$ctrl'
             }
         ];
         

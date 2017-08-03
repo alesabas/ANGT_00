@@ -7,6 +7,30 @@
             "DescPunto": "Before we start with creating actual HelloWorld application using AngularJS, let us see what are the actual parts of a AngularJS application.",
             "UrlPunto": "https://www.tutorialspoint.com/angularjs/angularjs_first_application.htm",
             "DirPunto" : "punto.detalle.4"
+        },
+        {
+            "IdPunto": 6,
+            "TitlePunto": "Punto 6",
+            "NamePunto": "Expressions",
+            "DescPunto": "Expressions are used to bind application data to html. Expressions are written inside double braces like {{ expression}}. Expressions behaves in same way as ng-bind directives. AngularJS application expressions are pure javascript expressions and outputs the data where they are used.",
+            "UrlPunto": "https://www.tutorialspoint.com/angularjs/angularjs_expressions.htm",
+            "DirPunto" : "punto.detalle.6"
+        },
+        {
+            "IdPunto": 7,
+            "TitlePunto": "Punto 7",
+            "NamePunto": "Controllers",
+            "DescPunto": "AngularJS application mainly relies on controllers to control the flow of data in the application. A controller is defined using ng-controller directive. A controller is a JavaScript object containing attributes/properties and functions. Each controller accepts $scope as a parameter which refers to the application/module that controller is to control.",
+            "UrlPunto": "https://www.tutorialspoint.com/angularjs/angularjs_controllers.htm",
+            "DirPunto" : "punto.detalle.7"
+        },
+        {
+            "IdPunto": 8,
+            "TitlePunto": "Punto 8",
+            "NamePunto": "Filter",
+            "DescPunto": "Filters are used to change modify the data and can be clubbed in expression or directives using pipe character. Following is the list of commonly used filters.",
+            "UrlPunto": "https://www.tutorialspoint.com/angularjs/angularjs_filters.htm",
+            "DirPunto" : "punto.detalle.8"
         }
     ]
 }

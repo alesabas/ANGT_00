@@ -1,3 +1,17 @@
+<script type="text/ng-template" id="group-template.html">
+    <div class="panel-heading">
+      <h4 class="panel-title" style="color:#fa39c3">
+        <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+          <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+            {{heading}}
+          </span>
+        </a>
+      </h4>
+    </div>
+    <div class="panel-collapse collapse" uib-collapse="!isOpen">
+      <div class="panel-body" style="text-align: right" ng-transclude></div>
+    </div>
+  </script>
 <div class="panel panel-default">
     <div class="panel-heading">
         <div class="row">
@@ -13,7 +27,7 @@
         <h4><b>Descripción:</b></h4>
         <p>{{$ctrl.TestListRest.descTest}}</p>
         <div class="container">
-            <h5>Ejemplo 1</h5>
+            <h5>Ejemplo 1:</h5>
             <uib-tabset>
                 <uib-tab index="4" heading="Static title 0">
                     <input type="text" class="form-control">
@@ -27,8 +41,7 @@
                     </select>
                 </uib-tab>
             </uib-tabset>
-            <hr>
-            <h5>Ejemplo 2</em></h5>
+            <h5>Ejemplo 2:</em></h5>
             <uib-tabset active="active">
                 <uib-tab index="0" heading="Static title">Static content</uib-tab>
                 <uib-tab index="$index + 1" ng-repeat="tab in $ctrl.tabs" heading="{{tab.title}}" disable="tab.disabled">
@@ -41,36 +54,51 @@
                     I've got an HTML heading, and a select callback. Pretty cool!
                 </uib-tab>
             </uib-tabset>
-            <hr>
-            <h5>Ejemplo 3</h5>
+            <h5>Ejemplo 3:</h5>
             <uib-tabset>
                 <uib-tab index="7" heading="Static title 0">
                     <br>
                     <div class="input-group">
-                        <input type="number" class="form-control" ng-model="$Number">
+                        <input type="number" class="form-control" ng-model="$ctrl.Number">
                         <span class="input-group-btn">
-                            <button class="btn btn-primary btn-md">Agregar <i class="fa fa-toggle-on"></i></button>
+                            <button class="btn btn-primary btn-md" ng-click="$ctrl.AddNum()">Agregar <i class="fa fa-toggle-on"></i></button>
                         </span>
                     </div>
                 </uib-tab>
                 <uib-tab index="8" heading="Static title 1">
                     <br>
                     <div class="input-group">
-                        <select class="form-control">
-                            <option value="">Select</option>
+                        <select class="form-control" ng-model="$ctrl.NumberDelete" ng-options="N for N in $ctrl.Numbers">
+                            <option value="">Selecciona</option>
                         </select>
                         <span class="input-group-btn">
-                            <button class="btn btn-danger btn-md">Quitar <i class="fa fa-toggle-off"></i></button>
+                            <button class="btn btn-danger btn-md" ng-click="$ctrl.DeleteNum()">Quitar <i class="fa fa-toggle-off"></i></button>
                         </span>
                     </div>
                 </uib-tab>
                 <uib-tab index="9" heading="Static title 2">
                     <br>
-                    <select class="form-control">
-                        <option value="">Select</option>
+                    <select class="form-control" ng-model="$ctrl.NumberList" ng-options="NL for NL in $ctrl.Numbers">
+                        <option value="">Selecciona</option>
                     </select>
                 </uib-tab>
             </uib-tabset>
+            <h4>Ejemplo 4</h4>
+            <uib-accordion close-others="oneAtATime">
+                <div uib-accordion-group class="panel-default" is-open="$ctrl.Status.isCustomHeaderOpen" template-url="group-template.html">
+                    <uib-accordion-heading>
+                        Custom template with custom header template <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': $ctrl.Status.isCustomHeaderOpen, 'glyphicon-chevron-right': !$ctrl.Status.isCustomHeaderOpen}"></i>
+                    </uib-accordion-heading>
+                    World
+                </div>
+                <div uib-accordion-group class="panel-default">
+                    <uib-accordion-heading>
+                        I can have markup, too! <i class="pull-right glyphicon; fa fa-angle-down"></i>
+                    </uib-accordion-heading>
+                    <p>This is just some content to illustrate fancy headings.</p>
+                    <input type="text" class="form-control">
+                </div>
+            </uib-accordion>
         </div>
     </div>
     <div class="panel-footer">

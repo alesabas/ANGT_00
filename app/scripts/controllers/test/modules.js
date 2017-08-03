@@ -46,7 +46,7 @@ angular
 					pageTitle: 'MAIN | TEST 2'
 				},
 				url: '/test/test_2',
-				templateUrl: 'views/test/test_2.html',
+				templateUrl: 'views/test/test_2.php',
 				controller: 'Test_2Ctrl',
 				controllerAs: '$ctrl'
 			},
