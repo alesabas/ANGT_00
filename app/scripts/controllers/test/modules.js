@@ -91,13 +91,13 @@ angular
 				controllerAs: '$ctrl'
 			},
 			{
-				name: 'test_main.list.test_6#menu1',
+				name: 'test_main.list.test_7',
 				data: {
-					pageTitle: 'MAIN | TEST 6'
+					pageTitle: 'MAIN | TEST 7'
 				},
-				url: '/test/test_6',
-				templateUrl: 'views/test/test_6.html',
-				controller: 'Test_6Ctrl',
+				url: '/test/test_7',
+				templateUrl: 'views/test/test_7.html',
+				controller: 'Test_7Ctrl',
 				controllerAs: '$ctrl'
 			}
 		];

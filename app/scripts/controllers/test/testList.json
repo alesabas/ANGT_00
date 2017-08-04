@@ -51,9 +51,9 @@
     {
         "idTest": 7,
         "nameTest": "Test 07",
-        "tituloTest": "Titulo...",
-        "descTest": "Descripcion...",
-        "dirTest" : "test_main.list.test_3"
+        "tituloTest": "Trasladar objetos",
+        "descTest": "Crear modulo para mover objetos",
+        "dirTest" : "test_main.list.test_7"
     },
     {
         "idTest": 8,

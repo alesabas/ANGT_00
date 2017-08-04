@@ -1,0 +1,103 @@
+<style>
+  .dualmultiselect label {
+    margin: 10px;
+  }
+
+  .dualmultiselect .btn {
+    margin: 10px;
+  }
+
+  .dualmultiselect .pool {
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px;
+    height: 100px;
+    overflow-y: scroll;
+  }
+
+  .dualmultiselect .pool ul {
+    list-style: none;
+    padding-left: 0px;
+  }
+
+  .dualmultiselect .pool ul li {
+    width: 40%;
+    padding: 4px 8px 4px 4px;
+    border-bottom: 1px dotted #CFCFCF;
+  }
+
+  .dualmultiselect .pool ul li a:hover {
+    text-decoration: none;
+  }
+</style>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>{{ $ctrl.TestListRest.idTest + " - " + $ctrl.TestListRest.nameTest + ": " + $ctrl.TestListRest.tituloTest }}</h3>
+            </div>
+            <div class="col-md-6" style="text-align:right;">
+                <a class="btn btn-success btn-md" role="button" ui-sref="test_main.list.test">Regresar <i class="fa fa-reply"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="panel-body">
+        <div class="row ">
+            <br>
+            <h5 class="text-danger text-center ">Selecciona</h5>
+            <p class="text-right"><button type="button" class="btn btn-primary btn-md" ng-click="$ctrl.Guardar()">Guardar <i class="fa fa-save"></i></button></p>
+            <div class="col-md-12">
+                <div class="dualmultiselect">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 text">
+                            <h6 class="text-center"><b>Lista</b></h6>
+                            <div class="pool">
+                                <ul>
+                                    <li ng-repeat="item in $ctrl.Items">
+                                        <a>
+                                            <b>{{ item.Name }}</b>
+                                            <small style="padding-left:20px; color:blue">Tipo : {{ item.Desc }}</small>
+                                        </a>
+                                        <button
+                                            title="Agregar pregunta a la encuesta"
+                                            type="button"
+                                            class="btn ink-reaction  btn-xs btn-success" 
+                                            ng-click="$ctrl.transfer($ctrl.Items, $ctrl.SelctItems, $ctrl.Items.indexOf(item))">
+                                            Agregar <i class="md-chevron-right"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <h6 class="text-center"><b>Selección</b></h6>                
+                            <div class="pool">
+                                <ul>
+                                    <li ng-repeat="item in $ctrl.SelctItems">
+                                        <a>
+                                            <p>{{ item.Name }}</p>
+                                            <br>
+                                            <small style="padding-left:20px; color:blue">Tipo : {{ item.Desc }}</small>
+                                        </a>
+                                        <button
+                                            title="Quitar pregunta a la encuesta" 
+                                            ng-click="$ctrl.transfer($ctrl.SelctItems, $ctrl.Items, $ctrl.SelctItems.indexOf(item))"
+                                            type="button"
+                                            class="btn ink-reaction  btn-xs btn-warning">
+                                            <i class="md-chevron-left"></i> Quitar 
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <br>
+    </div>
+</div>
