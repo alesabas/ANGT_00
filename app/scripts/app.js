@@ -1,6 +1,7 @@
 'use strict';
 angular
   .module('AngularApp', [
+    'angular-loading-bar',
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -11,13 +12,17 @@ angular
     'ui.bootstrap',
     'angularUtils.directives.dirPagination',
     'angularValidator',
-    'ngNotify'
+    'ngNotify',
+    'blockUI'
   ])
-  .config(function($stateProvider, $urlRouterProvider){
+  .config(function($stateProvider, $urlRouterProvider, cfpLoadingBarProvider, $qProvider, blockUIConfig){
       $urlRouterProvider.otherwise(function ($injector) {
         var $state = $injector.get('$state');
         $state.go('home');
       });
+      cfpLoadingBarProvider.includeSpinner = false;
+      $qProvider.errorOnUnhandledRejections(false);
+      blockUIConfig.templateUrl = 'views/components/loading.html';
   })
   .run(function ($rootScope, $state, $stateParams) {
     $rootScope.$state = $state;
