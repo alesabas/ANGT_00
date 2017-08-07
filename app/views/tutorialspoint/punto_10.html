@@ -1,0 +1,46 @@
+<h4>Ejemplo: </h4>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <input type="checkbox" ng-model="$ctrl.EnableDisableButton">Desactivar boton
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-primary btn-md" ng-disabled="$ctrl.EnableDisableButton">Click Me!</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <input type="checkbox" ng-model="$ctrl.ShowHide1">Mostrar boton
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-success btn-md" ng-show="$ctrl.ShowHide1">Click Me!</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <input type="checkbox" ng-model="$ctrl.ShowHide2">Esconder boton
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-warning btn-md" ng-hide="$ctrl.ShowHide2">Click Me!</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <p>Total click: {{ $ctrl.ClickCounter }}</p>
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-danger btn-md" ng-click="$ctrl.ClickCounter = $ctrl.ClickCounter + 1">Click Me!</button>
+            </div>
+        </div>
+    </div>
+</div>

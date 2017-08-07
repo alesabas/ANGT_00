@@ -31,6 +31,22 @@
             "DescPunto": "Filters are used to change modify the data and can be clubbed in expression or directives using pipe character. Following is the list of commonly used filters.",
             "UrlPunto": "https://www.tutorialspoint.com/angularjs/angularjs_filters.htm",
             "DirPunto" : "punto.detalle.8"
+        },
+        {
+            "IdPunto": 10,
+            "TitlePunto": "Punto 10",
+            "NamePunto": "HTML DOM",
+            "DescPunto": "Following directives can be used to bind application data to attributes of HTML DOM Elements.",
+            "UrlPunto": "https://www.tutorialspoint.com/angularjs/angularjs_html_dom.htm",
+            "DirPunto" : "punto.detalle.10"
+        },
+        {
+            "IdPunto": 12,
+            "TitlePunto": "Punto 12",
+            "NamePunto": "Forms",
+            "DescPunto": "AngularJS enriches form filling and validation. We can use ng-click to handle AngularJS click on button and use $dirty and $invalid flags to do the validations in seemless way. Use novalidate with a form declaration to disable any browser specific validation. Forms controls makes heavy use of Angular events. Let's have a quick look on events first.",
+            "UrlPunto": "https://www.tutorialspoint.com/angularjs/angularjs_forms.htm",
+            "DirPunto" : "punto.detalle.12"
         }
     ]
 }

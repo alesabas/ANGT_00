@@ -37,6 +37,20 @@ angular
                 templateUrl: 'views/tutorialspoint/punto_8.html',
                 controller: 'Punto_8Ctrl',
                 controllerAs: '$ctrl'
+            },
+            {
+                name: 'punto.detalle.10',
+                data: {pageTitle: 'TUTORIALSPOINT | PUNTO 10'},
+                templateUrl: 'views/tutorialspoint/punto_10.html',
+                controller: 'Punto_10Ctrl',
+                controllerAs: '$ctrl'
+            },
+            {
+                name: 'punto.detalle.12',
+                data: {pageTitle: 'TUTORIALSPOINT | PUNTO 12'},
+                templateUrl: 'views/tutorialspoint/punto_12.html',
+                controller: 'Punto_12Ctrl',
+                controllerAs: '$ctrl'
             }
         ];
         
