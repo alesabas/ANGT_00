@@ -18,6 +18,10 @@ angular
             return deferred.promise;
         }
 
+        factory.Multiply = function(a, b){
+            return a * b;
+        }
+
         return factory;
 
     });
