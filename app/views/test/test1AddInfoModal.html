@@ -27,13 +27,13 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="col-md-4">
-                    <input type="text" ng-model="ctrl.Nombre" name="InputNombre" class="form-control" placeholder="Nombre" validate-on="dirty" required required-message="'Obligatorio'">
+                    <input type="text" ng-model="ctrl.Nombre" name="InputNombre" class="form-control" placeholder="Nombre" validate-on="dirty" ng-pattern="/^[a-zA-Z\s]*$/" required required-message="'Obligatorio'" invalid-message="'Es invalido'">
                 </div>
                 <div class="col-md-4">
-                    <input type="text" ng-model="ctrl.ApellidoPaterno" name="InputApellidoPaterno" class="form-control" placeholder="Apellido paterno" validate-on="dirty" required required-message="'Obligatorio'">
+                    <input type="text" ng-model="ctrl.ApellidoPaterno" name="InputApellidoPaterno" class="form-control" placeholder="Apellido paterno" validate-on="dirty" ng-pattern="/^[a-zA-Z\s]*$/" required required-message="'Obligatorio'" invalid-message="'Es invalido'">
                 </div>
                 <div class="col-md-4">
-                    <input type="text" ng-model="ctrl.ApellidoMaterno" name="InputApellidoMaterno" class="form-control" placeholder="Apellido materno" validate-on="dirty" required required-message="'Obligatorio'">
+                    <input type="text" ng-model="ctrl.ApellidoMaterno" name="InputApellidoMaterno" class="form-control" placeholder="Apellido materno" validate-on="dirty" ng-pattern="/^[a-zA-Z\s]*$/" required required-message="'Obligatorio'" invalid-message="'Es invalido'">
                 </div>
             </div>
         </div>
@@ -67,10 +67,10 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="col-md-6">
-                    <input type="number" ng-model="ctrl.Telefono" name="InputTelefono" class="form-control" placeholder="Teléfono" validate-on="dirty" required required-message="'Es obligatroio'" ng-pattern="/^\d{10}$/">
+                    <input type="number" ng-model="ctrl.Telefono" name="InputTelefono" class="form-control" placeholder="Teléfono" validate-on="dirty" required required-message="'Es obligatroio'" ng-pattern="/^\d{10}$/" invalid-message="'Es invalido'">
                 </div>
                 <div class="col-md-6">
-                    <input type="email" ng-model="ctrl.Correo" name="InputCorreo" class="form-control" placeholder="correo electrónico" validate-on="dirty" required required-message="'Es obligatorio'">
+                    <input type="email" ng-model="ctrl.Correo" name="InputCorreo" class="form-control" placeholder="correo electrónico" validate-on="dirty" required required-message="'Es obligatorio'" invalid-message="'Es invalido'">
                 </div>
             </div>
         </div>
