@@ -1,38 +1,66 @@
 <div class="container">
-    <form>
+    <form name="StudentForm">
         <div class="row">
             <div class="col-md-12">
                 <div class="col-md-6">
-                    <p>Ingresar nombre:</p>
+                    <p><b>Ingresar nombre:</b></p>
                 </div>
                 <div class="col-md-6">
+                    <input type="text" class="form-control" name="Firstname" ng-model="$ctrl.FirstName" required>
+                    <span style="color:red" ng-show="StudentForm.Firstname.$dirty && StudentForm.Firstname.$invalid">
+                        <span ng-show="StudentForm.Firstname.$error.required">El nombre es requerido.</span>
+                    </span>
                 </div>
             </div>
         </div>
+        <br>
         <div class="row">
             <div class="col-md-12">
                 <div class="col-md-6">
-                    <p>Ingresar apellido:</p>
+                    <p><b>Ingresar apellido:</b></p>
                 </div>
                 <div class="col-md-6">
+                    <input type="text" class="form-control" name="Lastname" ng-model="$ctrl.LastName" required>
+                    <span style="color:red" ng-show="StudentForm.Lastname.$dirty && StudentForm.Lastname.$invalid">
+                        <span ng-show="StudentForm.Lastname.$error.required">El apellido es requerido.</span>
+                    </span>
                 </div>
             </div>
         </div>
+        <br>
         <div class="row">
             <div class="col-md-12">
                 <div class="col-md-6">
+                    <p><b>Ingresar correo electrónico:</b></p>
                 </div>
                 <div class="col-md-6">
+                    <input type="email" class="form-control" name="Email" ng-model="$ctrl.Email" length="100" required>
+                    <span style="color:red" ng-show="StudentForm.Email.$dirty && StudentForm.Email.$invalid">
+                        <span ng-show="StudentForm.Email.$error.required">El correo electrónico es requerido.</span>
+                        <span ng-show="StudentForm.Email.$error.email">El correo electrónico es invalido.</span>
+                    </span>
                 </div>
             </div>
         </div>
+        <br>
         <div class="row">
             <div class="col-md-12">
-                <div class="col-md-6">
+                <div class="col-md-3">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-warning btn-md" ng-click="$ctrl.Reset()">Reset</button>
+                </div>
+                <div class="col-md-3">
+                    <button type="submit"
+                        class="btn btn-success btn-md"
+                        ng-disabled="$ctrl.FirstName == null || $ctrl.LastName == null || $ctrl.Email == null"
+                        ng-click="$ctrl.Submit()">
+                        Submit
+                    </button>
+                </div>
+                <div class="col-md-3">
                 </div>
             </div>
         </div>
     </form>
-</div>
+</div> 
