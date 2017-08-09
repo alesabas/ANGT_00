@@ -7,6 +7,14 @@
             "DescCapitulo": "Explicaciones de las alternativas posibles de uso de la directiva ngClass de AngularJS con ejemplos prácticos.",
             "UrlCapitulo": "https://desarrolloweb.com/articulos/directiva-ngclass-angularjs.html",
             "DirCapitulo" : "capitulo.detalle.13"
+        },
+        {
+            "IdCapitulo": 14,
+            "TitleCapitulo": "Capitulo 14",
+            "NameCapitulo": "Trabajando con campos checkbox en AngularJS",
+            "DescCapitulo": "Explicaciones y prácticas con campos input checkbox con AngularJS, conociendo las directivas ngChecked, ngTrueValue, ngFalseValue, ngChecked.",
+            "UrlCapitulo": "https://desarrolloweb.com/articulos/trabajando-campos-checkbox-angularjs.html",
+            "DirCapitulo" : "capitulo.detalle.14"
         }
     ]
 }

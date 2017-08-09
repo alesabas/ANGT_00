@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <input type="checkbox" ng-model="$ctrl.Activo" ng-change="$ctrl.Avisar()">
+            Este campo es $ctrl.Activo y su valor en el modelo es: {{ $ctrl.Activo }}.
+        </div>
+        <div class="col-md-12">
+            Tiene además un ng-change asociado con el método $ctrl.Avisar().
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <input type="checkbox" ng-model="$ctrl.Clarooscuro" ng-true-value="'Claro'" ng-false-value="'Oscuro'">
+            Este campo tiene el value modificado. Ahora vale {{ $ctrl.Clarooscuro }}
+        </div>
+        <div class="col-md-12">
+            <input type="button" ng-click="$ctrl.Activo=true" value="pulsa para cambiar la propiedad del modelo del primer checkbox a true">
+            <br>
+            Observarás que aunque el estado pueda cambiar, no se invoca al ng-change de ese primer checkbox.
+        </div>
+    </div>
+</div>
