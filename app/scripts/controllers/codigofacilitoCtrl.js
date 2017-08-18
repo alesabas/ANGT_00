@@ -4,7 +4,7 @@ angular
     .module('AngularApp')
     .controller('CodigofacilitoCtrl', function(CodigofacilitoFactory, $uibModal){
 
-        function Start(){
+        function startModule(){
             CodigofacilitoFactory.SelectTutorialList().then(function(data){
                 vm.TutorialList = data.TutorialList;
             });
@@ -12,7 +12,7 @@ angular
 
         function OpenTutorialModal(Id){
             var IdTutorial = Id;
-            var modalInstance = $uibModal.open({
+            /*var modalInstance = */$uibModal.open({
                 animation: true,
                 ariaLabelledBy: 'modal-title',
                 ariaDescribedBy: 'modal-body',
@@ -35,9 +35,7 @@ angular
         }        
 
         var vm = this;
-
         vm.OpenTutorialModal = OpenTutorialModal;
-
-        Start();
+        startModule();
         
     });

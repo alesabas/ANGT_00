@@ -13,7 +13,8 @@ angular
     'angularUtils.directives.dirPagination',
     'angularValidator',
     'ngNotify',
-    'blockUI'
+    'blockUI',
+    'multipleSelect'
   ])
   .config(function($stateProvider, $urlRouterProvider, cfpLoadingBarProvider, $qProvider, blockUIConfig){
       $urlRouterProvider.otherwise(function ($injector) {

@@ -58,9 +58,9 @@
     {
         "idTest": 8,
         "nameTest": "Test 08",
-        "tituloTest": "Titulo...",
-        "descTest": "Descripcion...",
-        "dirTest" : "test_main.list.test_3"
+        "tituloTest": "Multiple select",
+        "descTest": "Desarrollar un multiple select",
+        "dirTest" : "test_main.list.test_8"
     },
     {
         "idTest": 9,

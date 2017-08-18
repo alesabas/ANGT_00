@@ -46,7 +46,7 @@ angular
 					pageTitle: 'MAIN | TEST 2'
 				},
 				url: '/test/test_2',
-				templateUrl: 'views/test/test_2.php',
+				templateUrl: 'views/test/test_2.html',
 				controller: 'Test_2Ctrl',
 				controllerAs: '$ctrl'
 			},
@@ -98,6 +98,16 @@ angular
 				url: '/test/test_7',
 				templateUrl: 'views/test/test_7.html',
 				controller: 'Test_7Ctrl',
+				controllerAs: '$ctrl'
+			},
+			{
+				name: 'test_main.list.test_8',
+				data: {
+					pageTitle: 'MAIN | TEST 8'
+				},
+				url: '/test/test_8',
+				templateUrl: 'views/test/test_8.html',
+				controller: 'Test_8Ctrl',
 				controllerAs: '$ctrl'
 			}
 		];
