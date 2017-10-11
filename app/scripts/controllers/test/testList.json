@@ -65,9 +65,9 @@
     {
         "idTest": 9,
         "nameTest": "Test 09",
-        "tituloTest": "Titulo...",
+        "tituloTest": "Menu Vertical",
         "descTest": "Descripcion...",
-        "dirTest" : "test_main.list.test_3"
+        "dirTest" : "test_main.list.test_9"
     },
     {
         "idTest": 10,

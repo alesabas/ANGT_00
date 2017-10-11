@@ -14,19 +14,22 @@
         <p>{{$ctrl.TestListRest.descTest}}</p>
         <br>
         <div class="container">
+            <form angular-validator-submit="$ctrl.see()" name="FormAddInfo" novalidate angular-validator>
             <div class="row">
                 <div class="col-md-5">
-            <multiple-autocomplete
-                ng-model="$ctrl.selectedList"
-                after-select-item="$ctrl.afterSelectItem"
-                before-select-item="$ctrl.beforeSelectItem"
-                object-property="name"
-                suggestions-arr="$ctrl.optionsList">
-            </multiple-autocomplete>
+                    <multiple-autocomplete
+                        name="Multiple"
+                        ng-model="$ctrl.selectedList"
+                        after-select-item="$ctrl.afterSelectItem"
+                        before-select-item="$ctrl.beforeSelectItem"
+                        object-property="name"
+                        suggestions-arr="$ctrl.optionsList">
+                    </multiple-autocomplete>
                 </div>
             </div>
             <br>
-            <button ng-click="$ctrl.see()">See</button>
+            <button type="submit" class="btn btn-success btn-sm" ng-disabled="($ctrl.selectedList.length > 0) ? false : true;">See</button>
+            </form>
             <br>
             <br>
             <multiple-autocomplete
@@ -35,6 +38,34 @@
                 suggestions-arr="$ctrl.optionsList">
             </multiple-autocomplete>
             <br>
+            <!--
+            <form name="multipleSelectForm" novalidate>
+                <div ng-class="{'has-error' : multipleSelectForm.multipleSelect.$invalid && multipleSelectForm.multipleSelect.$dirty, 'has-success' : !multipleSelectForm.multipleSelect.$invalid && multipleSelectForm.multipleSelect.$dirty}">
+                    <label>3. Making it Required field in a Form</label>
+                    <multiple-autocomplete ng-model="$ctrl.skills2" name="multipleSelect" required="true"
+                                        suggestions-arr="$ctrl.optionsList">
+                    </multiple-autocomplete>
+                    <span ng-show="multipleSelectForm.multipleSelect.$invalid && multipleSelectForm.multipleSelect.$dirty" class="ng-hide">
+                        <p class="error-msg" ng-show="multipleSelectForm.multipleSelect.$error.required">Please select something from multiple select field</p>
+                    </span>
+                </div>
+                <br/>
+                <button type="submit" class="btn btn-default" ng-click="$ctrl.onSubmit()">Submit Form</button>
+            </form>
+            -->
+            <form name="multipleSelectForm" novalidate>
+            <div ng-class="{'has-error' : multipleSelectForm.multipleSelect.$invalid && multipleSelectForm.multipleSelect.$dirty, 'has-success' : !multipleSelectForm.multipleSelect.$invalid && multipleSelectForm.multipleSelect.$dirty}">
+                <label>3. Making it Required field in a Form</label>
+                <multiple-autocomplete ng-model="$ctrl.skills2" name="multipleSelect" required="true"
+                                       suggestions-arr="$ctrl.optionsList">
+                </multiple-autocomplete>
+                <span ng-show="multipleSelectForm.multipleSelect.$invalid && multipleSelectForm.multipleSelect.$dirty" class="ng-hide">
+                    <p class="error-msg" ng-show="multipleSelectForm.multipleSelect.$error.required">Please select something from multiple select field</p>
+                </span>
+            </div>
+            <br/>
+            <button type="button" class="btn btn-default" ng-click="$ctrl.onSubmit()">Submit Form</button>
+        </form>
         </div>
     </div>
     <div class="panel-footer">
