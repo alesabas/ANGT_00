@@ -1,0 +1,26 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-md-6">
+                <!--
+                <h3>{{ $ctrl.TestListRest.idTest + " - " + $ctrl.TestListRest.nameTest + ": " + $ctrl.TestListRest.tituloTest }}</h3>
+                -->
+                <h3>File</h3>
+            </div>
+            <div class="col-md-6" style="text-align:right;">
+                <a class="btn btn-success btn-md" role="button" ui-sref="test_main.list.test">Regresar <i class="fa fa-reply"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="panel-body">
+        <!-- V1
+        <input type="file" file-model="myFile"/>
+        <button ng-click="$ctrl.uploadFile()">upload me</button>
+        -->
+        <input type="file" id="file1" name="file" multiple ng-files="getTheFiles($files)" />
+        <input type="button" ng-click="uploadFiles()" value="Uploadv2" />
+    </div>
+    <div class="panel-footer">
+        <br>
+    </div>
+</div>
