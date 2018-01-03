@@ -79,9 +79,9 @@
     {
         "idTest": 11,
         "nameTest": "Test 11",
-        "tituloTest": "Titulo...",
+        "tituloTest": "Tooltip",
         "descTest": "Descripcion...",
-        "dirTest" : "test_main.list.test_3"
+        "dirTest" : "test_main.list.test_11"
     },
     {
         "idTest": 12,

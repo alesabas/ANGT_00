@@ -123,11 +123,21 @@ angular
 			{
 				name: 'test_main.list.test_10',
 				data: {
-					pageTitle: 'MAIN | TEST 9'
+					pageTitle: 'MAIN | TEST 10'
 				},
 				url: '/test/test_10',
 				templateUrl: 'views/test/test_10.html',
 				controller: 'fupController',
+				controllerAs: '$ctrl'
+			},
+			{
+				name: 'test_main.list.test_11',
+				data: {
+					pageTitle: 'MAIN | TEST 11'
+				},
+				url: '/test/test_11',
+				templateUrl: 'views/test/test_11.html',
+				controller: 'Test_11Ctrl',
 				controllerAs: '$ctrl'
 			}
 		];
