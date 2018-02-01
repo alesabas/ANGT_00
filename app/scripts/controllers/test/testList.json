@@ -85,9 +85,9 @@
     },
     {
         "idTest": 12,
-        "nameTest": "Test 02",
-        "tituloTest": "PHP",
-        "descTest": "En esta pruba se desarrollara una pequeña aplicacion que nos permita manipular el lenguaje php",
-        "dirTest" : "test_main.list.test_"
+        "nameTest": "Test 12",
+        "tituloTest": "UI-Mask ",
+        "descTest": "En esta pruba se desarrollara una pequeña aplicacion que nos permita manipular ui-mask",
+        "dirTest" : "test_main.list.test_12"
     }
 ]}

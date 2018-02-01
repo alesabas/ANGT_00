@@ -37,6 +37,7 @@ module.exports = function(config) {
       'bower_components/angular-loading-bar/build/loading-bar.js',
       'bower_components/angular-block-ui/dist/angular-block-ui.js',
       'bower_components/angularMultipleSelect/build/multiple-select.min.js',
+      'bower_components/angular-ui-mask/dist/mask.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',

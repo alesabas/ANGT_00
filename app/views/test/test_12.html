@@ -1,0 +1,27 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>{{ $ctrl.TestListRest.idTest + " - " + $ctrl.TestListRest.nameTest + ": " + $ctrl.TestListRest.tituloTest }}</h3>
+            </div>
+            <div class="col-md-6" style="text-align:right;">
+                <a class="btn btn-success btn-md" role="button" ui-sref="test_main.list.test">Regresar <i class="fa fa-reply"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-1">
+                    <b>Fecha:</b>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control input-sm" ng-model="$ctrl.Fecha" ui-options="$ctrl.maskOptions" ui-mask="AAAA9999-***">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <br>
+    </div>
+</div>

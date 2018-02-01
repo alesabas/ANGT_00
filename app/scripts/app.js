@@ -14,7 +14,8 @@ angular
     'angularValidator',
     'ngNotify',
     'blockUI',
-    'multipleSelect'
+    'multipleSelect',
+    'ui.mask'
   ])
   .config(function($stateProvider, $urlRouterProvider, cfpLoadingBarProvider, $qProvider, blockUIConfig){
       $urlRouterProvider.otherwise(function ($injector) {
