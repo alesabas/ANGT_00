@@ -150,6 +150,17 @@ angular
 				controller: 'Test_12Ctrl',
 				controllerAs: '$ctrl'
 			}
+			,
+			{
+				name: 'test_main.list.test_15',
+				data: {
+					pageTitle: 'MAIN | TEST 15'
+				},
+				url: '/test/test_15',
+				templateUrl: 'views/test/test_15.html',
+				controller: 'Test_15Ctrl',
+				controllerAs: '$ctrl'
+			}
 		];
 
 		states.forEach(function (state) {
